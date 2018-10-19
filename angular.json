@@ -28,8 +28,9 @@
               "src/vendors/font-awesome/css/font-awesome.min.css",
               "src/vendors/camera-slider/camera.css",
               "src/vendors/owl_carousel/owl.carousel.css",
-              "src/css/styles.css"
-              
+              "src/css/styles.css",
+              "node_modules/ag-grid-community/dist/styles/ag-grid.css",
+              "node_modules/ag-grid-community/dist/styles/ag-theme-balham.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.slim.min.js",
