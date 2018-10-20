@@ -7,11 +7,11 @@ import { ROUTING } from "./app-routing.module";
 import { AppComponent } from './app.component';
 
 import { AgGridModule } from 'ag-grid-angular';
-  import { UploadimagesComponent } from './UploadImages/uploadimages.component';
-  import {UploaddetailsService} from './Services/uploaddetails.service';
-  import { ContactComponent } from './grid/contact/contact.component';
+  import { UploadImagesComponent } from './UploadImages/uploadimages.component';
+  import {UploadDetailsService} from './Services/uploaddetails.service';
+  import { ContactComponent } from './contact/contact.component';
   import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './LandingPage/home/home.component';
 
 
 //const routes: Routes = [
@@ -27,7 +27,7 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UploadimagesComponent,
+    UploadImagesComponent,
     ContactComponent,
     HeaderComponent,
     HomeComponent
@@ -39,7 +39,7 @@ import { HomeComponent } from './home/home.component';
     AgGridModule.withComponents([]),
     ROUTING
   ],
-  providers: [UploaddetailsService],
+  providers: [UploadDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { } 

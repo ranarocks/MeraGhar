@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class UploaddetailsService {
+export class UploadDetailsService {
 
   constructor(private http:HttpClient) { }
 
