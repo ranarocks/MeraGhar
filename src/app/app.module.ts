@@ -11,6 +11,7 @@ import {UploaddetailsService} from './Services/uploaddetails.service';
 import { ContactComponent } from './grid/contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
     component: UploadimagesComponent
   },
   { path: 'grid', component: ContactComponent },
+  { path: 'admin', component: AdminComponent },
   { path: 'home', component: HomeComponent },
   { path: '',redirectTo: 'home',pathMatch: 'full'}
 ];
@@ -28,7 +30,8 @@ const routes: Routes = [
     UploadimagesComponent,
     ContactComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
