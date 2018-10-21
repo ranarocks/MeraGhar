@@ -3,41 +3,45 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ROUTING } from "./app-routing.module";
 import { AppComponent } from './app.component';
 
 import { AgGridModule } from 'ag-grid-angular';
-import { UploadimagesComponent } from './UploadImages/uploadimages.component';
-import {UploaddetailsService} from './Services/uploaddetails.service';
-import { ContactComponent } from './grid/contact/contact.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+  import { UploadImagesComponent } from './UploadImages/uploadimages.component';
+  import {UploadDetailsService} from './Services/uploaddetails.service';
+  import { ContactComponent } from './contact/contact.component';
+  import { HeaderComponent } from './header/header.component';
+  import { AdminComponent } from './admin/admin.component';
+import { HomeComponent } from './LandingPage/home/home.component';
 
-const routes: Routes = [
-  {
-    path: 'upload',
-    component: UploadimagesComponent
-  },
-  { path: 'grid', component: ContactComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '',redirectTo: 'home',pathMatch: 'full'}
-];
+
+//const routes: Routes = [
+//  {
+//    path: 'upload',
+//    component: UploadimagesComponent
+//  },
+//  { path: 'grid', component: ContactComponent },
+//  { path: 'home', component: HomeComponent },
+//  { path: '',redirectTo: 'home',pathMatch: 'full'}
+//];
 
 @NgModule({
   declarations: [
     AppComponent,
-    UploadimagesComponent,
+    UploadImagesComponent,
     ContactComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule ,
     AgGridModule.withComponents([]),
-    RouterModule.forRoot(routes)
+    ROUTING
   ],
-  providers: [UploaddetailsService],
+  providers: [UploadDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { } 

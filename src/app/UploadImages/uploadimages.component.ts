@@ -1,14 +1,14 @@
 import { Component, OnInit,  ViewChild } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import {UploaddetailsService} from '../Services/uploaddetails.service';
+import {UploadDetailsService} from '../Services/uploaddetails.service';
 
 @Component({
   selector: 'app-uploadimages',
   templateUrl: './uploadimages.component.html',
   styleUrls: ['./uploadimages.component.css']
 })
-export class UploadimagesComponent implements OnInit {
+export class UploadImagesComponent implements OnInit {
   img:string="data:image/jpeg;base64,";
   stateList = [];
   Logo:any;
@@ -17,7 +17,7 @@ export class UploadimagesComponent implements OnInit {
   @ViewChild('myForm')
   private myForm: NgForm;
 
-  constructor(private router: Router, private _UploaddetailsService: UploaddetailsService) { }
+  constructor(private router: Router, private _UploadDetailsService: UploadDetailsService) { }
 
   ngOnInit() {
   }
