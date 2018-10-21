@@ -1,7 +1,7 @@
 
 import {RouterModule,Routes} from '@angular/router';
 import { ModuleWithProviders } from '@angular/core/src/metadata/ng_module';
-import { UploadImagesComponent } from './UploadImages/uploadimages.component';
+import { UploadImagesComponent } from './Admin/UploadImages/uploadimages.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './LandingPage/home/home.component';
 

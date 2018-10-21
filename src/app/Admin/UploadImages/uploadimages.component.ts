@@ -1,7 +1,7 @@
 import { Component, OnInit,  ViewChild } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import {UploadDetailsService} from '../Services/uploaddetails.service';
+import {UploadDetailsService} from 'src/app/Services/uploaddetails.service';
 
 @Component({
   selector: 'app-uploadimages',
