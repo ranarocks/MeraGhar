@@ -11,6 +11,7 @@ import { AgGridModule } from 'ag-grid-angular';
   import {UploadDetailsService} from './Services/uploaddetails.service';
   import { ContactComponent } from './contact/contact.component';
   import { HeaderComponent } from './header/header.component';
+  import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './LandingPage/home/home.component';
 import { CarouselComponent } from './LandingPage/carousel/carousel.component';
 import { ActivityListComponent } from './LandingPage/activity-list/activity-list.component';
