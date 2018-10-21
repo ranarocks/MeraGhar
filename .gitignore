@@ -37,3 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/MeraGhar/v15/.suo
+/.vs/config/applicationhost.config
